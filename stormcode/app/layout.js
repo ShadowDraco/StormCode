@@ -1,11 +1,11 @@
 
 import '@mantine/core/styles.css';
-
+import '@mantine/carousel/styles.css';
 import React from 'react';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
-import '@mantine/core/styles.css';
-import '@mantine/carousel/styles.css';
+import { Analytics } from "@vercel/analytics/next"
+
 
 import MainHeader from './components/Layout/Heading'
 
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
           <MainHeader />
           {children}
         </MantineProvider>
+        <Analytics />
       </body>
     </html>
   );
