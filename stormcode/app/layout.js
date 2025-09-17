@@ -5,9 +5,9 @@ import React from 'react';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
-
-import MainHeader from './components/layout/Heading'
+import MainHeader from './components/layout/MainHeader';
 
 export const metadata = {
   title: 'Storm Code',
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
           {children}
         </MantineProvider>
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );

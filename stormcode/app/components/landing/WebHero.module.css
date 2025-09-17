@@ -16,6 +16,10 @@
   z-index: 1;
 }
 
+.borderBottom {
+  border-bottom: 5px solid black;
+}
+
 .title {
   font-weight: 800;
   font-size: 40px;

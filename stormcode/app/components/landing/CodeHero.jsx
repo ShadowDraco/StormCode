@@ -5,7 +5,7 @@ import classes from './CodeHero.module.css';
 
 export default function Hero() {
   return (
-    <Container size="lg">
+    <Container size="lg" className={classes.borderBottom}>
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>

@@ -5,32 +5,33 @@ import WebMaster from '../../../public/WebMaster.webp'
 
 export default function WebHero() {
   return (
-    <BackgroundImage src={WebMaster.src} radius="sm">
-    <Container size='lg' p={50}>
+    <BackgroundImage src={WebMaster.src} radius="sm" m={0} className={classes.borderBottom}>
+    <Container size='lg' p={50} >
 
-      <div className={classes.inner}>
-        <Title className={classes.title} my={20}>
+      <Box className={classes.inner} bg="rgba(10,10,10,0.7)" p={10}>
+        <Title className={classes.title} my={20} c="white">
           Experienced Web Master{' '}
           <Text component="span" inherit className={classes.highlight}>
-            - Any Platform
+            - On Every Platform
           </Text>
         </Title>
 
         <Container size={640}  my={20}>
-          <Text size="lg" className={classes.description}>
-           With great experience in self hosted platforms like Vercel and render putting my own code to the test. To <strong>Word Press</strong>
+          <Text size="lg" className={classes.description} c="white">
+           Experience with Vercel, Word Press, Go Daddy, Shopify, Wix, and more 
+           <br></br>A Web master can take the reigns on any website!
           </Text>
         </Container>
 
         <Box className={classes.controls}  my={50}>
           <Button className={classes.control} variant="white" size="lg">
-            Get started
+            Portfolio
           </Button>
           <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
-            Live demo
+            Contact
           </Button>
         </Box>
-      </div>
+      </Box>
     </Container>
     </BackgroundImage>
   );

@@ -64,7 +64,10 @@ export default function CardsCarousel() {
   ));
 
   return (
-    <Container size="md">
+    <Container size="md" pt={20}>
+       <Title order={3} className={classes.title}>
+          Want a Preview?
+        </Title>
       <Carousel
         slideSize={{ base: '100%', sm: '50%' }}
         slideGap={2}

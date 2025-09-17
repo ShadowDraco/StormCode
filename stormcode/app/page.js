@@ -5,8 +5,8 @@ import WebHero from './components/landing/WebHero';
 export default function HomePage() {
   return (
     <>
-    <CodeHero />
     <WebHero />
+    <CodeHero />
     <Carousel />
     </>
    

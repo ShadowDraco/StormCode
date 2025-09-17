@@ -1,9 +1,9 @@
 import { BackgroundImage, Anchor, Group, Box, Flex, Text, Title } from '@mantine/core';
 import FutureBackground from '../../../public/FutureBackground.webp'
-import classes from './Heading.module.css';
+import classes from './MainHeader.module.css';
 import { ColorSchemeToggle } from './ColorSchemeToggle';
 
-export default function Heading() {
+export default function MainHeader() {
   return (
   <BackgroundImage src={FutureBackground.src} radius="sm" >
     
