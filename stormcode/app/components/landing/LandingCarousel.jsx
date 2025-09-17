@@ -1,8 +1,8 @@
 "use client"
-import { Carousel} from '@mantine/carousel';
+import { Carousel } from '@mantine/carousel';
 import { Container, Button, Paper, Text, Title, useMantineTheme, Anchor } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import classes from './Carousel.module.css';
+import classes from './LandingCarousel.module.css';
 
 //import WebDesign from '../../../public/WebDesign.webp'
 import HollywoodPainter from '../../../public/HollywoodPainter.webp'
