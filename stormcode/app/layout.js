@@ -7,7 +7,7 @@ import { theme } from '../theme';
 import { Analytics } from "@vercel/analytics/next"
 
 
-import MainHeader from './components/Layout/Heading'
+import MainHeader from './components/layout/Heading'
 
 export const metadata = {
   title: 'Storm Code',

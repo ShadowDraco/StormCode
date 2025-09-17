@@ -1,10 +1,12 @@
-import Carousel from './components/Landing/Carousel'
-import Hero from './components/Landing/Hero'
+import Carousel from './components/landing/Carousel'
+import CodeHero from './components/landing/CodeHero'
+import WebHero from './components/landing/WebHero';
 
 export default function HomePage() {
   return (
     <>
-    <Hero />
+    <CodeHero />
+    <WebHero />
     <Carousel />
     </>
    

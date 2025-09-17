@@ -1,6 +1,7 @@
-import { BackgroundImage, Anchor, Group, Box, Text, Title } from '@mantine/core';
+import { BackgroundImage, Anchor, Group, Box, Flex, Text, Title } from '@mantine/core';
 import FutureBackground from '../../../public/FutureBackground.webp'
 import classes from './Heading.module.css';
+import { ColorSchemeToggle } from './ColorSchemeToggle';
 
 export default function Heading() {
   return (
@@ -14,26 +15,35 @@ export default function Heading() {
         </Text>
       </Title>
       </Anchor>
-      <Text c="" ta="center" size="lg" maw={400}>
+      <Text c="white" ta="center" size="lg" maw={400}>
         Web design and Tech Solutions for <strong>Everyone</strong>
       </Text>
 
        <Group mt="sm" className={classes.navbar}>
+        <Anchor href="/about" td="none">
         <Box p="sm" className={classes.navlink}>
-            <Text c="black" size="lg">
-                <Anchor href="/about" td="none" c="gray">About</Anchor>
+            <Text size="lg">
+                About
             </Text>
         </Box>
+        </Anchor>
+         <Anchor href="/contact" td="none">
         <Box p="sm" className={classes.navlink}>
-            <Text c="black" size="lg">
-                <Anchor href="/contact" td="none" c="gray">Contact</Anchor>
+            <Text size="lg">
+               Contact
             </Text>
         </Box>
+        </Anchor>
+         <Anchor href="/commission" td="none">
         <Box p="sm" className={classes.navlink}>
-            <Text c="black" size="lg">
-                <Anchor href="/commission" td="none" c="gray">Commission</Anchor>
+            <Text size="lg">
+               Commission
             </Text>
         </Box>
+        </Anchor>
+        <Flex className={classes.colorButton}style={{ flexGrow: 1, justifyContent: 'right'}}>
+          <ColorSchemeToggle />
+        </Flex>
       </Group>
 
     </BackgroundImage>

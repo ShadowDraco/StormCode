@@ -1,7 +1,7 @@
 import { IconCheck } from '@tabler/icons-react';
 import { Anchor, Button, Container, Group, Image, List, ListItem, Text, ThemeIcon, Title } from '@mantine/core';
 import image from '../../../public/CodeBackground1.webp';
-import classes from './Hero.module.css';
+import classes from './CodeHero.module.css';
 
 export default function Hero() {
   return (
@@ -38,7 +38,7 @@ export default function Hero() {
                 <Anchor href="/commission" td="none" c="white">Commission</Anchor>
             </Button>
             <Button variant="default" radius="xl" size="md" className={classes.control}>
-              <Anchor href="/contact" td="none" c="white">Contact</Anchor>
+              <Anchor href="/contact" td="none" >Contact</Anchor>
             </Button>
           </Group>
         </div>
