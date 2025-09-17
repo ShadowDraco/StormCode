@@ -18,8 +18,8 @@ export default function WebHero() {
 
         <Container size={640}  my={20}>
           <Text size="lg" className={classes.description} c="white">
-           Experience with Vercel, Word Press, Go Daddy, Shopify, Wix, and more 
-           <br></br>A Web master can take the reigns on any website!
+           Experience with Word Press, Go Daddy, Squarespace, Shopify, Wix, and more 
+           <br></br>A web master can take the reigns on any website!
           </Text>
         </Container>
 

@@ -1,15 +1,17 @@
 import { IconCheck } from '@tabler/icons-react';
 import { Anchor, Button, Container, Group, Image, List, ListItem, Text, ThemeIcon, Title } from '@mantine/core';
-import image from '../../../public/CodeBackground1.webp';
-import classes from './CodeHero.module.css';
+import image from '../../../public/GameSetup.webp';
+import classes from './GameHero.module.css';
 
-export default function CodeHero() {
+export default function GameHero() {
   return (
     <Container size="lg" className={classes.borderBottom}>
       <div className={classes.inner}>
+
+        <Image src={image.src} className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>
-            A <span className={classes.highlight}>Modern</span> Web Designer <br />
+            Proffesional <span className={classes.highlight}>Local</span> Gaming PC's <br />
           </Title>
 
           <List
@@ -23,13 +25,13 @@ export default function CodeHero() {
             }
           >
             <ListItem>
-              <b>Real Programming</b> – Websites are built with code and designs written by a human
+              <b>No Markup</b> – Work / Gaming PC Builds at Cost
             </ListItem>
             <ListItem>
-              <b>Flexible Pricing</b> – As a customer you are taken care of. Let us discuss price, honest!
+              <b>Small Build Fee</b> – Even with a build fee expect to <strong>Save</strong> $300 or more!
             </ListItem>
              <ListItem>
-              <b>Original Work</b> – No paid web templates, no shortcuts, no extra costs, just <strong>Your Website</strong>
+              <b>Testing</b> – Testing, Benchmarks, and Quality Assurance before pick up
             </ListItem>
           </List>
 
@@ -42,7 +44,7 @@ export default function CodeHero() {
             </Button>
           </Group>
         </div>
-        <Image src={image.src} className={classes.image} />
+        
       </div>
     </Container>
   );

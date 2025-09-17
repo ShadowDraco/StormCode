@@ -1,15 +1,15 @@
 import { IconCheck } from '@tabler/icons-react';
 import { Anchor, Button, Container, Group, Image, List, ListItem, Text, ThemeIcon, Title } from '@mantine/core';
-import image from '../../../public/CodeBackground1.webp';
-import classes from './CodeHero.module.css';
+import image from '../../../public/Breakdance.webp';
+import classes from './DanceHero.module.css';
 
-export default function CodeHero() {
+export default function DanceHero() {
   return (
     <Container size="lg" className={classes.borderBottom}>
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
-            A <span className={classes.highlight}>Modern</span> Web Designer <br />
+            A <span className={classes.highlight}>Trained</span> Breakdancer <br />
           </Title>
 
           <List
@@ -23,13 +23,13 @@ export default function CodeHero() {
             }
           >
             <ListItem>
-              <b>Real Programming</b> – Websites are built with code and designs written by a human
+              <b>8+ Years</b> – Pursuing Passion of <strong>Dance and Programming</strong>
             </ListItem>
             <ListItem>
-              <b>Flexible Pricing</b> – As a customer you are taken care of. Let us discuss price, honest!
+              <b>8+ Styles</b> – Classically trained in Ballet, Tap, Jazz, Lyrical, Modern, Theatre, Hula, and Breakdance
             </ListItem>
              <ListItem>
-              <b>Original Work</b> – No paid web templates, no shortcuts, no extra costs, just <strong>Your Website</strong>
+              <b>Commited</b> – Talent helps, but commitment is <strong>Key</strong>
             </ListItem>
           </List>
 

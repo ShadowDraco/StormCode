@@ -1,16 +1,17 @@
 "use client"
 import { Carousel} from '@mantine/carousel';
-import { Container, Button, Paper, Text, Title, useMantineTheme } from '@mantine/core';
+import { Container, Button, Paper, Text, Title, useMantineTheme, Anchor } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import classes from './Carousel.module.css';
 
 //import WebDesign from '../../../public/WebDesign.webp'
 import HollywoodPainter from '../../../public/HollywoodPainter.webp'
+import IslasAuto from '../../../public/IslasAuto.webp'
 import WhitePC from '../../../public/WhitePC.webp'
 import BlackPC from '../../../public/BlackPC.webp'
 
 
-function Card({ image, title, category }) {
+function Card({ image, title, category, link, buttonText }) {
   return (
     <Paper
       shadow="md"
@@ -24,12 +25,14 @@ function Card({ image, title, category }) {
           {category}
         </Text>
         <Title order={3} className={classes.title}>
-          {title}
+          {title? title : ''}
         </Title>
       </div>
-      <Button variant="white" color="dark">
-        Read article
-      </Button>
+      <Anchor href={link ? link : null} target="_blank">
+        <Button variant="white" color="dark">
+          { buttonText ? buttonText : "Learn More"}
+        </Button>
+      </Anchor>
     </Paper>
   );
 }
@@ -38,8 +41,15 @@ const data = [
   
   {
     image: HollywoodPainter.src,
-    title: "The Hollywood Painter",
+    title: "Website Builds",
     category: 'Web Design',
+    link: "https://bereketli-art.vercel.app/"
+  },
+  {
+    image: IslasAuto.src,
+    title: "",
+    category: 'Web Design',
+    link: "https://www.islasautobody.com/"
   },
   {
     image: BlackPC.src,
@@ -48,17 +58,17 @@ const data = [
   },
    {
     image: WhitePC.src,
-    title: 'Gaming PC / Work PC',
-    category: '',
+    title: '',
+    category: 'PC Building',
   },
 
 ];
 
-export default function CardsCarousel() {
+export default function LandingCarousel() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => (
-    <Carousel.Slide key={item.title}>
+  const slides = data.map((item, index) => (
+    <Carousel.Slide key={item.title? item.title : "landing-carosel"+index}>
       <Card {...item} />
     </Carousel.Slide>
   ));
