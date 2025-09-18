@@ -1,5 +1,5 @@
-# ShmaYisrael
-Palm Dessert Messianic Congregation
+# Storm Code
+The best way to do Web Services
 
 ### Build and dev scripts
 
