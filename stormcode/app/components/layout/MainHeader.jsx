@@ -90,24 +90,9 @@ export default function MainHeader() {
         </Text>
 
         <Group mt="sm" className={classes.navbar}>
-          <Anchor href="/about" td="none" c="white">
-            <Box p="sm" className={classes.navlink}>
-              <Text size="lg">About</Text>
-            </Box>
-          </Anchor>
-          <Anchor href="/portfolio" td="none" c="white">
-            <Box p="sm" className={classes.navlink}>
-              <Text size="lg">Portfolio</Text>
-            </Box>
-          </Anchor>
           <Anchor href="/contact" td="none" c="white">
             <Box p="sm" className={classes.navlink}>
               <Text size="lg">Contact</Text>
-            </Box>
-          </Anchor>
-          <Anchor href="/commission" td="none" c="white">
-            <Box p="sm" className={classes.navlink}>
-              <Text size="lg">Commission</Text>
             </Box>
           </Anchor>
         </Group>

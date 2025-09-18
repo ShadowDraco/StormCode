@@ -15,13 +15,13 @@ const mockdata = [
   {
     title: "Free - Easy Consulting",
     description:
-      "Get started fast and simple, contact us to learn more about our services",
+      "Get started fast and simple! contact us to learn more about our services.",
     icon: IconGauge,
   },
   {
     title: "Personal",
     description:
-      "A website tells more than just business a address. Your story is important and requires a personal touch!",
+      "A website tells more than just business and address. Your story is important and requires a personal touch!",
     icon: IconUser,
   },
   {
