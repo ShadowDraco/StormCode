@@ -5,10 +5,11 @@ import { ColorSchemeToggle } from './ColorSchemeToggle';
 
 export default function MainHeader() {
   return (
-  <BackgroundImage src={FutureBackground.src} radius="sm" >
-    
-      <Anchor href="/">
-      <Title className={classes.title} c="white" ta="left" p={5} pl={10}>
+  
+    <>
+    <BackgroundImage src={FutureBackground.src} radius="sm" visibleFrom="sm">
+    <Anchor href="/">
+      <Title className={classes.title} c="white" ta="left" bg="black" p={5} pl={10}>
         Storm{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'blue', to: 'white' }}>
           Code
@@ -18,15 +19,7 @@ export default function MainHeader() {
       <Text c="white" ta="center" size="lg" maw={400}>
         Web design and Tech Solutions for <strong>Everyone</strong>
       </Text>
-
        <Group mt="sm" className={classes.navbar}>
-        <Anchor href="/about" td="none">
-        <Box p="sm" className={classes.navlink}>
-            <Text size="lg">
-                About
-            </Text>
-        </Box>
-        </Anchor>
          <Anchor href="/contact" td="none">
         <Box p="sm" className={classes.navlink}>
             <Text size="lg">
@@ -40,12 +33,51 @@ export default function MainHeader() {
                Commission
             </Text>
         </Box>
-        </Anchor>
-        <Flex className={classes.colorButton}style={{ flexGrow: 1, justifyContent: 'right'}}>
+        </Anchor >
+        <Flex className={classes.colorButton}style={{ flexGrow: 1, justifyContent: 'right'}} >
           <ColorSchemeToggle />
         </Flex>
       </Group>
-
     </BackgroundImage>
+
+    <Box bg="black" hiddenFrom="sm">
+      <Anchor href="/">
+      <Title className={classes.title} c="white" ta="left" bg="black" p={5} pl={10}>
+        Storm{' '}
+        <Text inherit variant="gradient" component="span" gradient={{ from: 'blue', to: 'white' }}>
+          Code
+        </Text>
+      </Title>
+      </Anchor>
+      <Text c="white" ta="left" size="lg" maw={400} pl={10}>
+        Web design and<br></br>Tech Solutions for <strong>Everyone</strong>
+      </Text>
+
+       <Group mt="sm" className={classes.navbar}>
+          <Anchor href="/portfolio" td="none">
+            <Box p="sm" className={classes.navlink}>
+              <Text size="lg">
+                Portfolio
+              </Text>
+            </Box>
+          </Anchor>
+        <Anchor href="/contact" td="none">
+          <Box p="sm" className={classes.navlink}>
+            <Text size="lg">
+              Contact
+            </Text>
+          </Box>
+        </Anchor>
+         <Anchor href="/commission" td="none">
+        <Box p="sm" className={classes.navlink}>
+            <Text size="lg">
+               Commission
+            </Text>
+        </Box>
+        </Anchor>
+      </Group>
+    </Box>
+    
+    </>
   );
 }

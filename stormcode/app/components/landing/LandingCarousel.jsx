@@ -1,6 +1,6 @@
 "use client"
 import { Carousel } from '@mantine/carousel';
-import { Container, Button, Paper, Text, Title, useMantineTheme, Anchor } from '@mantine/core';
+import { Container, Button, Paper, Text, Title, useMantineTheme, Anchor, Flex } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import classes from './LandingCarousel.module.css';
 
@@ -75,9 +75,13 @@ export default function LandingCarousel() {
 
   return (
     <Container size="md" pt={20}>
-       <Title order={3} className={classes.title}>
-          Want a Preview?
+
+      <Flex m={20} justify={"center"}>
+        <Title order={3} className={classes.title}>
+          Want to see more?
         </Title>
+      </Flex>
+       
       <Carousel
         slideSize={{ base: '100%', sm: '50%' }}
         slideGap={2}

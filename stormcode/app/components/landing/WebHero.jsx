@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { BackgroundImage, Button, Box, Container, Overlay, Text, Title } from '@mantine/core';
+import { BackgroundImage, Button, Box, Container, Flex, Text, Title } from '@mantine/core';
 import classes from './WebHero.module.css';
 import WebMaster from '../../../public/WebMaster.webp'
 
@@ -23,14 +23,21 @@ export default function WebHero() {
           </Text>
         </Container>
 
-        <Box className={classes.controls}  my={50}>
-          <Button className={classes.control} variant="white" size="lg">
+        <Flex className={classes.controls} my={50} justify="center">
+          <Button className={classes.control} variant="white" size="lg" visibleFrom="md">
             Portfolio
           </Button>
-          <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
+          <Button className={cx(classes.control, classes.secondaryControl)} size="lg" visibleFrom="md">
             Contact
           </Button>
-        </Box>
+
+          <Button className={classes.control} variant="white" size="sm" hiddenFrom="md">
+            Portfolio
+          </Button>
+          <Button className={cx(classes.control, classes.secondaryControl)} size="sm" hiddenFrom="md">
+            Contact
+          </Button>
+        </Flex>
       </Box>
     </Container>
     </BackgroundImage>
