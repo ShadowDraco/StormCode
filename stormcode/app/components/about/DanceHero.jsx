@@ -53,7 +53,7 @@ export default function DanceHero() {
 
             <Group mt={30}>
               <Button radius="xl" size="md" className={classes.control}>
-                <Anchor href="/commission" td="none" c="white">
+                <Anchor href="/contact" td="none" c="white">
                   Commission
                 </Anchor>
               </Button>

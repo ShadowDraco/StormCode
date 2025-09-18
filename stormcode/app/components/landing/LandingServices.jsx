@@ -27,7 +27,7 @@ const mockdata = [
   {
     title: "No Fluff",
     description:
-      "No extra costs, no hidden fees, no drag and drop templates, no third parties, no loops",
+      "No extra costs, no hidden fees, no drag and drop templates, no third parties, no loops.",
     icon: IconX,
   },
 ];
@@ -46,7 +46,7 @@ export default function LandingServices() {
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
+      <Text fz="sm" mt="sm">
         {feature.description}
       </Text>
     </Card>

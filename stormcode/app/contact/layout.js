@@ -1,10 +1,6 @@
-
-import '@mantine/core/styles.css';
-import '@mantine/carousel/styles.css';
-
 export const metadata = {
   title: 'Contact Storm Code',
-  description: 'Get yourself up to the Storm Code! Custom Websites, Web Services and Gaming PCs!',
+  description: 'Custom Websites, Web Services, and Work/Gaming PCs for the Inland Empire and Beyond. Get yourself up to the Storm Code!',
 };
 
 export default function RootLayout({ children }) {

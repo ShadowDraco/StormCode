@@ -4,7 +4,7 @@ import Services from '../components/contact/Services'
 
 export default function page() {
   return (
-    <Container mt={100}>
+    <Container mt={40}>
       <Services />
       <ContactForm />
     </Container>

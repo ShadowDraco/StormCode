@@ -11,8 +11,8 @@ import Image from "next/image";
 
 const links = [
   { link: "/contact", label: "Contact" },
-  { link: "/commision", label: "Commision" },
-  { link: "/portfolio", label: "Portfolio" },
+  { link: "/contact", label: "Commision" },
+  { link: "/about", label: "Portfolio" },
 ];
 
 export default function MainFooter() {
