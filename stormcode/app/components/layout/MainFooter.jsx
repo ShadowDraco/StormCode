@@ -1,16 +1,18 @@
-'use client'
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import { ActionIcon, Anchor, Group, Container } from '@mantine/core';
-import Logo from '../../../public/Logo.webp'
-import classes from './MainFooter.module.css'
-import Image from 'next/image';
+"use client";
+import {
+  IconBrandInstagram,
+  IconBrandTwitter,
+  IconBrandYoutube,
+} from "@tabler/icons-react";
+import { ActionIcon, Anchor, Group, Container, Box } from "@mantine/core";
+import Logo from "../../../public/Logo.webp";
+import classes from "./MainFooter.module.css";
+import Image from "next/image";
 
 const links = [
-  { link: '#', label: 'Contact' },
-  { link: '#', label: 'Privacy' },
-  { link: '#', label: 'Blog' },
-  { link: '#', label: 'Store' },
-  { link: '#', label: 'Careers' },
+  { link: "/contact", label: "Contact" },
+  { link: "/commision", label: "Commision" },
+  { link: "/portfolio", label: "Portfolio" },
 ];
 
 export default function MainFooter() {
@@ -28,24 +30,60 @@ export default function MainFooter() {
   ));
 
   return (
-    <div className={classes.footer}>
-      <Container className={classes.inner} display="flex" style={{ justifyContent: "space-between", alignItems: "center"}} pb={20}>
-        <Image src={Logo.src} width={50} height={50} alt="Storm Code Logo" />
+    <>
+      <Box className={classes.footer} visibleFrom="sm">
+        <Container
+          className={classes.inner}
+          display="flex"
+          style={{ justifyContent: "space-between", alignItems: "center" }}
+          pb={20}
+        >
+          <Anchor href="/">
+            <Image
+              src={Logo.src}
+              width={50}
+              height={50}
+              alt="Storm Code Logo"
+            />
+          </Anchor>
 
-        <Group className={classes.links}>{items}</Group>
+          <Group className={classes.links}>{items}</Group>
 
-        <Group gap="xs" justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandTwitter size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandInstagram size={18} stroke={1.5} />
-          </ActionIcon>
-        </Group>
-      </Container>
-    </div>
+          <Group gap="xs" justify="flex-end" wrap="nowrap">
+            <Anchor href="https://instagram.com/stormyfrolic" target="_blank">
+              <ActionIcon size="lg" variant="default" radius="xl">
+                <IconBrandInstagram size={18} stroke={1.5} />
+              </ActionIcon>
+            </Anchor>
+          </Group>
+        </Container>
+      </Box>
+
+      <Box className={classes.footer} hiddenFrom="sm">
+        <Container
+          className={classes.inner}
+          display="flex"
+          style={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: 10,
+            flexWrap: "wrap",
+          }}
+          pb={20}
+        >
+          <Image src={Logo.src} width={50} height={50} alt="Storm Code Logo" />
+
+          <Group className={classes.links}>{items}</Group>
+
+          <Group gap="xs" justify="flex-end" wrap="nowrap">
+            <Anchor href="https://instagram.com/stormyfrolic" target="_blank">
+              <ActionIcon size="lg" variant="default" radius="xl">
+                <IconBrandInstagram size={18} stroke={1.5} />
+              </ActionIcon>
+            </Anchor>
+          </Group>
+        </Container>
+      </Box>
+    </>
   );
 }

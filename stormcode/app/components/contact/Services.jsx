@@ -1,6 +1,6 @@
-import { IconCertificate, IconCoin, IconTruck } from '@tabler/icons-react';
-import { Container, SimpleGrid, Text } from '@mantine/core';
-import classes from './Services.module.css';
+import { IconCertificate, IconCoin, IconWorldWww } from "@tabler/icons-react";
+import { Container, SimpleGrid, Text } from "@mantine/core";
+import classes from "./Services.module.css";
 
 function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
@@ -12,7 +12,7 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
         <Text fw={700} fz="lg" mb="xs" mt={5} className={classes.title}>
           {title}
         </Text>
-        <Text c="dimmed" fz="sm">
+        <Text c="dimmed" fz="lg">
           {description}
         </Text>
       </div>
@@ -22,22 +22,21 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
 
 const mockdata = [
   {
-    icon: IconTruck,
-    title: 'Free Worldwide shipping',
+    icon: IconWorldWww,
+    title: "Custom Websites for All",
     description:
-      'As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.',
+      "Invidual, Business, Church, School, Startup, Restaurant, Service - Everyone",
   },
   {
     icon: IconCertificate,
-    title: 'Best Quality Product',
-    description:
-      'Slakoth’s heart beats just once a minute. Whatever happens, it is content to loaf around motionless.',
+    title: "Best Quality Product",
+    description: "A Certified Full-Stack web developer manages every project.",
   },
   {
     icon: IconCoin,
-    title: 'Very Affordable Pricing',
+    title: "Very Affordable Pricing",
     description:
-      'Thought to have gone extinct, Relicanth was given a name that is a variation of the name of the person who discovered.',
+      "Build YOUR custom website for $250 and get lifetime support, updates, and content for cheap",
   },
 ];
 

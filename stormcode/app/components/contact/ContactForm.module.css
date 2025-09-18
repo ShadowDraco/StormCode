@@ -15,7 +15,6 @@
 
 .title {
   font-family: Outfit, var(--mantine-font-family);
-  color: var(--mantine-color-white);
   font-weight: 500;
   line-height: 1;
 }
@@ -37,7 +36,6 @@
 }
 
 .social {
-  color: var(--mantine-color-white);
 
   @mixin hover {
     color: var(--mantine-color-blue-1);

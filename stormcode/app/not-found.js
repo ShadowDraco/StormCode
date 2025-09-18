@@ -7,9 +7,9 @@ export default function page() {
   return (
     <Container className={classes.root} ta="center">
       <Image src={Logo.src} width={100} height={100} alt="Storm Code Logo" />
-      <Title className={classes.title}>You have found a secret place.</Title>
+      <Title className={classes.title}>Coming Soon!</Title>
       <Text c="dimmed" size="lg" ta="center" className={classes.description}>
-        Unfortunately, this is still being worked on, or the link was wrong 
+        Unfortunately, this is still being worked on!
       </Text>
       <Group justify="center">
         <Anchor href="/">
