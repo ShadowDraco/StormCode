@@ -17,14 +17,7 @@ const links = [
 
 export default function MainFooter() {
   const items = links.map((link) => (
-    <Anchor
-      c="dimmed"
-      key={link.label}
-      href={link.link}
-      lh={1}
-      onClick={(event) => event.preventDefault()}
-      size="sm"
-    >
+    <Anchor c="dimmed" key={link.label} href={link.link} lh={1} size="sm">
       {link.label}
     </Anchor>
   ));
@@ -71,7 +64,14 @@ export default function MainFooter() {
           }}
           pb={20}
         >
-          <Image src={Logo.src} width={50} height={50} alt="Storm Code Logo" />
+          <Anchor href="/">
+            <Image
+              src={Logo.src}
+              width={50}
+              height={50}
+              alt="Storm Code Logo"
+            />
+          </Anchor>
 
           <Group className={classes.links}>{items}</Group>
 
