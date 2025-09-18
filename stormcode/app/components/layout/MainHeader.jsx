@@ -49,26 +49,12 @@ export default function MainHeader() {
           Web Services and Tech Solutions for <strong>Everyone</strong>
         </Text>
         <Group mt="sm" className={classes.navbar}>
-          <Anchor href="/about" td="none" c="white">
-            <Box p="sm" className={classes.navlink}>
-              <Text size="lg">About</Text>
-            </Box>
-          </Anchor>
-          <Anchor href="/portfolio" td="none" c="white">
-            <Box p="sm" className={classes.navlink}>
-              <Text size="lg">Portfolio</Text>
-            </Box>
-          </Anchor>
           <Anchor href="/contact" td="none" c="white">
             <Box p="sm" className={classes.navlink}>
               <Text size="lg">Contact</Text>
             </Box>
           </Anchor>
-          <Anchor href="/commission" td="none" c="white">
-            <Box p="sm" className={classes.navlink}>
-              <Text size="lg">Commission</Text>
-            </Box>
-          </Anchor>
+
           <Flex
             className={classes.colorButton}
             style={{ flexGrow: 1, justifyContent: "right" }}

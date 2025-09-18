@@ -51,21 +51,21 @@ export default function GameHero() {
             </List>
 
             <Group mt={30}>
-              <Button radius="xl" size="md" className={classes.control}>
-                <Anchor href="/commission" td="none" c="white">
+              <Anchor href="/commission" td="none" c="white">
+                <Button radius="xl" size="md" className={classes.control}>
                   Commission
-                </Anchor>
-              </Button>
-              <Button
-                variant="default"
-                radius="xl"
-                size="md"
-                className={classes.control}
-              >
-                <Anchor href="/contact" td="none">
+                </Button>
+              </Anchor>
+              <Anchor href="/contact" td="none">
+                <Button
+                  variant="default"
+                  radius="xl"
+                  size="md"
+                  className={classes.control}
+                >
                   Contact
-                </Anchor>
-              </Button>
+                </Button>
+              </Anchor>
             </Group>
           </div>
         </div>
@@ -110,21 +110,21 @@ export default function GameHero() {
             </List>
 
             <Group mt={30}>
-              <Button radius="xl" size="md" className={classes.control}>
-                <Anchor href="/commission" td="none" c="white">
+              <Anchor href="/commission" td="none" c="white">
+                <Button radius="xl" size="md" className={classes.control}>
                   Commission
-                </Anchor>
-              </Button>
-              <Button
-                variant="default"
-                radius="xl"
-                size="md"
-                className={classes.control}
-              >
-                <Anchor href="/contact" td="none">
+                </Button>
+              </Anchor>
+              <Anchor href="/contact" td="none">
+                <Button
+                  variant="default"
+                  radius="xl"
+                  size="md"
+                  className={classes.control}
+                >
                   Contact
-                </Anchor>
-              </Button>
+                </Button>
+              </Anchor>
             </Group>
           </div>
         </Flex>

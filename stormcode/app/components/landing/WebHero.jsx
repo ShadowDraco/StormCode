@@ -1,6 +1,7 @@
 import cx from "clsx";
 
 import {
+  Anchor,
   BackgroundImage,
   Button,
   Box,
@@ -85,37 +86,51 @@ export default function WebHero() {
           </Container>
 
           <Flex className={classes.controls} my={50} justify="center">
-            <Button
-              className={classes.control}
-              variant="white"
-              size="lg"
-              visibleFrom="md"
-            >
-              Portfolio
-            </Button>
-            <Button
+            <Anchor href="/contact" className={classes.control}>
+              <Button
+                className={classes.control}
+                variant="white"
+                size="lg"
+                visibleFrom="md"
+              >
+                Portfolio
+              </Button>
+            </Anchor>
+            <Anchor
+              href="/contact"
               className={cx(classes.control, classes.secondaryControl)}
-              size="lg"
-              visibleFrom="md"
             >
-              Contact
-            </Button>
+              <Button
+                className={cx(classes.control, classes.secondaryControl)}
+                size="lg"
+                visibleFrom="md"
+              >
+                Contact
+              </Button>
+            </Anchor>
 
-            <Button
-              className={classes.control}
-              variant="white"
-              size="sm"
-              hiddenFrom="md"
-            >
-              Portfolio
-            </Button>
-            <Button
+            <Anchor href="/contact" className={classes.control}>
+              <Button
+                className={classes.control}
+                variant="white"
+                size="sm"
+                hiddenFrom="md"
+              >
+                Portfolio
+              </Button>
+            </Anchor>
+            <Anchor
+              href="/contact"
               className={cx(classes.control, classes.secondaryControl)}
-              size="sm"
-              hiddenFrom="md"
             >
-              Contact
-            </Button>
+              <Button
+                className={cx(classes.control, classes.secondaryControl)}
+                size="sm"
+                hiddenFrom="md"
+              >
+                Contact
+              </Button>
+            </Anchor>
           </Flex>
         </Box>
       </Container>
