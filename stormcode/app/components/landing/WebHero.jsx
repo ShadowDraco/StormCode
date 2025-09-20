@@ -58,7 +58,13 @@ export default function WebHero() {
               </Group>
             </Group>
 
-            <Title className={classes.title} my={20} mt={35} c="" ta="center">
+            <Title
+              className={classes.title}
+              my={20}
+              mt={35}
+              c="white"
+              ta="center"
+            >
               Start or Transfer <em>Your</em> Web Services <br></br> with Storm
               Code
             </Title>
@@ -79,7 +85,13 @@ export default function WebHero() {
               </Group>
             </Group>
 
-            <Title className={classes.title} my={20} mt={35} c="" ta="center">
+            <Title
+              className={classes.title}
+              my={20}
+              mt={35}
+              c="white"
+              ta="center"
+            >
               Start or Transfer <em>Your</em> Web Services <br></br> with Storm
               Code
             </Title>
