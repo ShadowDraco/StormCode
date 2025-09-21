@@ -44,7 +44,7 @@ export default function WebHero() {
             justify="center"
             visibleFrom="sm"
           >
-            <Group c="teal">
+            <Group c="blue">
               <Group>
                 <Title order={3}>Individual ⬤</Title>
                 <Title order={3}>Small Business ⬤</Title>
@@ -71,7 +71,7 @@ export default function WebHero() {
           </Container>
 
           <Container size={840} my={20} hiddenFrom="sm">
-            <Group c="teal">
+            <Group c="blue">
               <Group>
                 <Title order={3}>Individual ⬤</Title>
                 <Title order={3}>Small Business ⬤</Title>

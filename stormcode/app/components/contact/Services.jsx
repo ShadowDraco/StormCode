@@ -36,7 +36,7 @@ const mockdata = [
     icon: IconCoin,
     title: "Very Affordable Pricing",
     description:
-      "Build YOUR custom website for $250 and get lifetime support, updates, and content for cheap",
+      "Build YOUR custom website for cheap and get lifetime support, updates, and content for cheap",
   },
 ];
 
